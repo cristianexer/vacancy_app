@@ -1,0 +1,89 @@
+//
+
+@import "fontawesome/scss/fontawesome.scss";
+@import "fontawesome/scss/solid.scss";
+@import "fontawesome/scss/brands.scss";
+
+$header-color: #668B9D;
+$primary-color: #74C5B6;
+$secondary-color:#9C9D9C;
+$default-color:#FDFDFD;
+
+html, body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: Roboto,Helvetica,Arial,sans-serif !important;
+    font-weight: 200;
+    margin: 0;
+}
+
+
+.navbar-main{
+    background-color: $header-color;
+    padding-top:2rem !important;
+    padding-bottom: 2rem !important;
+    .navbar-brand{
+        color:#fff;
+    }
+}
+
+
+@for $i from 1 through 5 {
+    .lh-#{$i}{
+        line-height: #{$i}rem;
+    }
+}
+
+
+.btn-primary{
+    background: $primary-color !important;
+}
+
+.btn-secondary{
+    background: $secondary-color !important;
+}
+
+.btn{
+    text-transform: uppercase;
+    border:0 !important;
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
+}
+
+.vacancy-card{
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
+    .vacancy-card-body{
+        font-size:1.1rem;
+        i{
+            font-size:1.2rem;
+            color:$primary-color;
+            margin-right:.4rem;
+        }
+
+    }
+}
+
+.btn-add-vacancy{
+    color: $primary-color !important;
+    background:#fff !important;
+    border:1px solid #ccc !important;
+}
+
+
+.page-item{
+
+    .page-link{
+        color:$primary-color !important;
+        .i{
+            font-size: .9rem;
+        }
+    }
+
+    &.active{
+        .page-link{
+            color:#fff !important;
+            background-color:$primary-color !important;
+            border-color:$primary-color !important;
+        }
+    }
+
+}
